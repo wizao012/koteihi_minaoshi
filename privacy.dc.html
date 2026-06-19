@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;}
+body{margin:0;background:#ede0cc;}
+a{color:inherit;text-decoration:none;}
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;justify-content:center;font-family:'M PLUS Rounded 1c','Noto Sans JP',sans-serif;color:#2d2a26;">
+<div style="width:100%;max-width:430px;background:#fdf3e7;position:relative;overflow:hidden;box-shadow:0 0 50px rgba(80,50,20,.10);min-height:100vh;display:flex;flex-direction:column;">
+
+  <!-- Header bar -->
+  <div style="display:flex;align-items:center;gap:14px;padding:16px 20px;background:#fffdf8;box-shadow:0 2px 10px rgba(180,130,70,.08);position:sticky;top:0;z-index:10;">
+    <a href="lp.dc.html" style="display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#f1f7e9;color:#2a9e46;flex:none;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+    </a>
+    <img src="assets/kv/logo-official.png" alt="イークオリティ くらしサポート" style="height:34px;width:auto;display:block;">
+  </div>
+
+  <!-- Page heading -->
+  <div style="padding:38px 28px 8px;text-align:center;">
+    <div style="font-family:'M PLUS Rounded 1c',sans-serif;font-weight:900;font-size:13px;letter-spacing:0.28em;color:#EF6C1F;padding-left:0.28em;">PRIVACY POLICY</div>
+    <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-top:10px;">
+      <span style="width:26px;height:3px;border-radius:2px;background:#9cd07a;"></span>
+      <h1 style="margin:0;font-weight:900;font-size:24px;letter-spacing:0.04em;">プライバシーポリシー</h1>
+      <span style="width:26px;height:3px;border-radius:2px;background:#9cd07a;"></span>
+    </div>
+  </div>
+
+  <!-- Intro -->
+  <div style="padding:18px 24px 6px;">
+    <div style="background:#fffdf8;border-radius:16px;box-shadow:0 4px 16px rgba(180,130,70,.10);padding:20px 20px;">
+      <div style="display:flex;gap:18px;font-size:12.5px;font-weight:700;color:#2a7d3e;margin-bottom:12px;">
+        <span style="white-space:nowrap;">制定日 2012年5月1日</span>
+        <span style="white-space:nowrap;">改定日 2025年6月1日</span>
+      </div>
+      <div style="font-weight:800;font-size:15px;line-height:1.6;">株式会社新生活ポータル</div>
+      <div style="font-weight:700;font-size:13.5px;color:#5a534a;margin-top:2px;">代表取締役　浜野 佑斗</div>
+      <p style="margin:14px 0 0;font-size:13.5px;line-height:1.85;font-weight:500;">株式会社新生活ポータル（以下「当社」といいます。）は以下のとおり、プライバシーポリシーを定めます。</p>
+    </div>
+  </div>
+
+  <!-- Sections -->
+  <div style="padding:14px 24px 8px;display:flex;flex-direction:column;gap:20px;">
+    <sc-for list="{{ sections }}" as="sec" hint-placeholder-count="5">
+      <div style="background:#fffdf8;border-radius:16px;box-shadow:0 4px 16px rgba(180,130,70,.10);overflow:hidden;">
+        <div style="display:flex;align-items:center;gap:10px;background:#f6faf0;padding:15px 18px;border-bottom:1px solid #eadfcc;">
+          <span style="flex:none;white-space:nowrap;font-weight:900;font-size:12px;color:#fff;background:#2a9e46;border-radius:999px;padding:4px 12px;letter-spacing:0.04em;">{{ sec.kicker }}</span>
+          <h2 style="margin:0;font-weight:900;font-size:15.5px;line-height:1.4;color:#2d2a26;">{{ sec.title }}</h2>
+        </div>
+        <div style="padding:6px 18px 18px;">
+          <sc-for list="{{ sec.items }}" as="it" hint-placeholder-count="3">
+            <div style="padding:14px 0 0;">
+              <sc-if value="{{ it.heading }}" hint-placeholder-val="{{ true }}">
+                <div style="display:flex;gap:7px;font-weight:800;font-size:14px;color:#22823c;line-height:1.5;margin-bottom:6px;">
+                  <span style="flex:none;">{{ it.no }}</span><span>{{ it.heading }}</span>
+                </div>
+              </sc-if>
+              <p style="margin:0;font-size:13px;line-height:1.95;font-weight:500;white-space:pre-line;color:#3a352f;">{{ it.body }}</p>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+
+  <!-- Back button -->
+  <div style="padding:14px 24px 40px;">
+    <a href="lp.dc.html" style="display:flex;align-items:center;justify-content:center;gap:8px;background:#2a9e46;color:#fff;font-weight:800;font-size:15px;border-radius:999px;padding:15px;box-shadow:0 6px 16px rgba(42,158,70,.28);">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      トップに戻る
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <div style="margin-top:auto;padding:20px;text-align:center;font-size:11px;color:#8a8175;background:#fffdf8;">© e-quality Co., Ltd. All Rights Reserved.</div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      sections: [
+        {
+          kicker: "第1", title: "個人情報保護方針",
+          items: [
+            { no: "1.", heading: "基本方針", body: "当社は、お客様の個人情報が、個人情報保護法及び個人の人格尊重(プライバシー保護)の理念の下に、適正かつ慎重に取り扱われるべきものであり、法令遵守のみならず個人の権利利益と密接に関わるものであるという認識に基づき、個人情報の取扱に際して以下の事項を誓約します。" },
+            { no: "2.", heading: "法令の遵守と個人情報マネジメントシステムの継続的改善", body: "当社は、個人情報に関する法令・規範を遵守するとともに、個人情報を適切に管理・保護するための社内体制および諸規程を整備し、これを実効あるものとして運用するとともに、継続的改善に努めます。" },
+            { no: "3.", heading: "個人情報の取得・利用・提供", body: "当社は、必要な範囲に限定した適切な個人情報の取得、利用及び提供を行います。また、特定された利用目的の達成に必要な範囲を超えた個人情報の取扱い（目的外利用）を行わず、それを実現するための措置を講じます。" },
+            { no: "4.", heading: "正確性・安全性の確保", body: "当社は、個人情報の正確性・安全性を確保するため、保有する個人情報を正確かつ最新の内容に保つよう努めるとともに、不正なアクセス、紛失、破壊、改ざん、漏洩等のリスクに対し、適切かつ合理的な安全対策を講じ、個人情報の保護に努めます。" },
+            { no: "5.", heading: "お客様への対応", body: "当社は、個人情報の情報主体であるお客様より、ご自身の個人情報に関する請求、苦情及び相談をいただいた場合は、すみやかに調査を行い、適切に対応します。" },
+          ],
+        },
+        {
+          kicker: "第2", title: "個人情報の取得・利用等について",
+          items: [
+            { no: "1.", heading: "当社事業について", body: "当社は、次の各号の事業（以下「当社事業」といいます。）において、お客様の個人情報を取り扱います。\n\n（１）お客様の生活・ビジネスに必要な物、サービス及び情報をリサーチし、コンサルティングする事業\n（２）IT商品・サービス、インフラ商材をはじめとした有益な商材をお客様の実情に合わせ、提供・取次する事業\n（３）商材・業種に特化したWEBメディアの運営に関する事業\n（４）引っ越し事業\n（５）その他前各号に関連・付随する事業" },
+            { no: "2.", heading: "取得する個人情報の内容について", body: "当社は、当社が遂行する各事業において必要となる次の各号の個人情報及びその他のパーソナルデータ（以下「個人情報等」といいます。）を、原則としてお客様の同意を得た上で取得します。個人情報の取得に際しては、利用目的を特定して通知または公表し、その利用目的に従って個人情報を取扱います。\n\n（１）氏名、生年月日、性別その他のプロフィールに関する情報\n（２）住所、電話番号、FAX番号、電子メールアドレスその他の連絡先に関する情報\n（３）個人を識別できる情報と紐づいた当社事業で提供したサービスに関する利用履歴\n（４）コンピューターがインターネットに接続するときに使用されるIPアドレスその他当社が管理するサーバーにアクセスしたことを契機として機械的に取得される情報\n（５）通話を記録することにより取得する情報\n（６）その他当社が定める入力フォームにお客様が入力する情報\n（７）その他当社がお客様への電話連絡時にヒアリングする情報\n（８）その他前各号に関連又は付随する情報" },
+            { no: "3.", heading: "取得する個人情報等の利用目的・取扱等について", body: "当社は、取得した個人情報等を下記の目的で利用します。\n\n（１）個人情報等を取扱う当社事業における商品・サービスの提供\n（２）前号に関するアフターサービスの提供\n（３）当社事業その他に関する各種料金の請求収納及び債権保全\n（４）当社事業に関する新商品・新サービスの検討、開発\n（５）第1号及び前号の商品・サービスに関する情報のご案内\n（６）当社事業における営業・勧誘方法の研修及び適正化のための従業員教育\n（７）当社事業に関する市場調査その他の調査研究\n（８）懸賞及びキャンペーン等の実施\n（９）経営分析のための統計数値作成及び分析結果の利用\n（10）個人情報保護法に基づく開示請求等への対応、並びに個人情報等の取扱いに関する監視及び監査\n（11）取引先との契約関係の管理\n（12）施設及び機器の管理\n（13）当社グループ及び第三者への開示・提供\n（14）広告の配信、表示及び効果測定のため\n（15）本サービスに関する規約変更など重要な通知の実施\n（16）お問い合わせ等に適切に対応するため\n（17）その他、前各号に関連、付随する業務の遂行上必要な範囲" },
+            { no: "4.", heading: "音声データの取得について", body: "当社は、電話、電子メール、チャット、SNS等インターネット環境等を通じて、お客様との通話等の音声データを取得させて頂く場合があります。取得した音声データは「お客様対応の品質向上及びお客様との通話内容確認」に利用いたします。" },
+            { no: "5.", heading: "お問い合わせフォームから取得する個人情報について", body: "当社は、Webお問い合わせフォームで取得する個人情報を、ご依頼・お問い合わせの対応のために利用いたします。\n個人情報のご提供はお客様の任意ですが、ご提供いただけない場合は、お問い合わせに対して、十分な回答を致しかねる場合があります。" },
+            { no: "6.", heading: "取得した個人情報等の取扱及び管理について", body: "当社は、法令順守または利用目的の達成に必要な範囲・期間において、個人情報等を保管・利用いたします。個人情報等を、原則、「2.」の利用目的以外では利用いたしません。利用目的の変更は、変更前の利用目的と相当の関連性を有すると合理的に認められる範囲を超えて行いません。\n取得した個人情報等は、利用の必要がなくなり次第速やかに消去いたします。\n取得した個人情報等は、情報セキュリティ基本方針及び個人情報保護方針に基づき、適切に管理いたします。当社は、個人情報を正確かつ最新の内容に保つよう努め、不正なアクセス・改ざん・漏えい・滅失及び毀損から保護するため全従業員及び役員に対して教育研修を実施します。" },
+            { no: "7.", heading: "取得した個人情報等の利用制限", body: "当社は、お客様から取得した個人情報等を、違法又は不当な行為を助長する等の不適正な方法で利用いたしません。" },
+          ],
+        },
+        {
+          kicker: "第3", title: "第三者への開示・提供について",
+          items: [
+            { no: "1.", heading: "第三者への開示・提供", body: "当社は、以下の各号にあたる場合には、法令順守又は利用目的の達成に必要な範囲・期間において、お客様の個人情報等を第三者へ開示・提供いたします。なお、いかなる場合も、当社が取扱う当該個人情報の管理については、当社が責任を持つものと致します。\nまた、当社は、業務を円滑に進めるため、業務の一部を委託し、業務委託先に対して必要な範囲内で個人情報を提供することがありますが、この場合、当社は当該委託先との間で個人情報の取扱いに関する契約の締結をはじめ、適切な監督を実施します。\n\n（1）業務委託先等への提供の場合、関連会社間で共同利用する場合、及び以下の何れかに該当する場合\n　ア．お客様の同意がある場合\n　イ．統計的なデータなどお客様を識別することができない状態で開示・提供する場合\n　ウ．法令に基づき開示・提供を求められた場合\n　エ．人の生命、身体または財産の保護のために必要な場合\n　オ．国または地方公共団体等が公的な事務を実施するうえで、協力する必要がある場合であって、お客様の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがある場合\n　カ．外部サービスとの連携または、外部サービスを利用した認証にあたり、当該外部サービス運営会社にお客様の情報を提供する場合\n（2）支払期限を経過したにもかかわらず、当社事業に係る料金等を支払わない者がいる場合や、不払い額及び滞納額に争いがある場合等で、その者の氏名、住所、生年月日の情報等を、当社事業に係る料金不払いの発生を防ぐことを目的として、当該事業に関わる他の事業者に対して提供する場合。\n（3）支払期日を経過したにもかかわらず、当社事業に係る料金等を支払わない者がいる場合。滞納料金回収の目的で、滞納料金債権を譲渡し、その譲受人に対し、料金滞納者の氏名、住所、生年月日、不払い額等の情報等を提供する場合があります。\n（4）事業の再編、合併、組織改編または営業譲渡等の際のデュー・デリジェンス(企業内容の調査)を目的として、当該デュー・デリジェンスを行う者に提供する場合" },
+            { no: "2.", heading: "共同利用", body: "当社は、業務を円滑に進めるため、当社の親会社及び関連会社との間でお客様の個人情報等を共同して利用します。\n\nなお、当社の親会社及び関連会社との間での利用する場合の利用目的は当社の利用目的に加え、当社の子会社及び関連会社のものを含みます。当該情報の管理については当社が責任を有し、管理します。" },
+          ],
+        },
+        {
+          kicker: "第4", title: "個人情報の開示等について",
+          items: [
+            { no: "1.", heading: "開示について", body: "当社の保有個人データに関して、お客様がご自身の情報の開示をご希望される場合には、お申し出いただいた方がご本人であることを確認したうえで、合理的な期間及び範囲で、原則として電子メールで回答します。なお、法令により開示の申し出には応じられない場合があります。" },
+            { no: "2.", heading: "訂正・削除等", body: "当社の保有個人データの内容に関して、お客様の情報について訂正、追加または削除（以下「訂正等」といいます。）をご希望される場合には、お申し出いただいた方がご本人であることを確認したうえで、事実と異なる内容がある場合には、合理的な期間及び範囲で情報の訂正、追加または削除をします。" },
+            { no: "3.", heading: "利用停止・消去", body: "当社の保有個人データに関して、お客様の情報の利用停止又は消去（以下「利用停止」等といいます。）をご希望される場合には、お申し出いただいた方がご本人であることを確認したうえで、原則として合理的な期間及び範囲で利用停止または消去します。" },
+            { no: "4.", heading: "開示等の受付方法・窓口", body: "当社の保有個人データに関して、前各項のお申し出及び、その他の個人情報に関するお問合せは以下の方法にて受け付けます。\nなお、この受付方法によらない開示等の求めには応じられない場合がありますので、ご了承ください。\n\n(1)受付手続\n下記の宛先に本人確認書類を添付の上電子メールでお申込ください。受付手続についての詳細は、お申し出いただいた際にご案内申し上げます。\n\n【受付窓口】\n株式会社新生活ポータル　個人情報受付センター\nメール： privacy_policy@shinseikatsu-portal.jp\n\n【手数料】\n「利用目的の通知」及び「開示」についての手数料は、1件のお申込みにつき1,000円とします。" },
+            { no: "5.", heading: "注意事項", body: "・個人情報保護法の例外規定にあたる場合など、開示等の求めにお答えできない場合があります。\n・お問い合わせの内容により、回答にお時間をいただく場合があります。\n・開示等の求めにともない収集した個人情報は、開示等の求めの必要な範囲のみで取扱うものとします。提出していただいた本人確認情報は当社で適切に廃棄いたします。\n・「訂正等」、「利用停止等」の結果、該当するサービスがご利用いただけなくなることがあります。" },
+          ],
+        },
+        {
+          kicker: "第5", title: "プライバシーポリシーの変更",
+          items: [
+            { no: "", heading: "", body: "当社では、個人情報の取扱いについて、定期的な見直しを行い、個人情報保護法および関連法令を遵守した適正な管理の維持に努めます。そのため、取扱いの改善および関連法令の改訂に伴い、当ポリシーおよび各個別方針、社内規定を予告なく改訂することがございます。重要な変更がある場合は当社ホームページにてお知らせいたします。" },
+          ],
+        },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>
