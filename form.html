@@ -185,10 +185,12 @@ class Component extends DCLogic {
           送信元URL: (typeof location !== 'undefined' ? location.href : '')
         };
         this.setState({ sending: true, error: '' });
+        const fd = new FormData();
+        Object.entries(payload).forEach(([k, v]) => fd.append(k, v));
         fetch(this.WEBHOOK, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
+          mode: 'no-cors',
+          body: fd
         }).then(() => {
           window.location.href = 'thanks.html';
         }).catch(() => {
