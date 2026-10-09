@@ -1,0 +1,67 @@
+/* Visual-only design pass. The prior published version is backed up separately. */
+body{background-color:#f3f7fa;background-image:radial-gradient(ellipse at 0 20%,#d9e9f7 0,transparent 48%),radial-gradient(ellipse at 100% 90%,#fff0db 0,transparent 50%);background-attachment:fixed}
+.lp-column{box-shadow:0 0 0 1px #123f7008,0 22px 80px #123f7014}
+header{padding-block:13px;background:#fff}.header-tag{border:0;border-radius:100px;padding:7px 13px;background:#edf5fd;box-shadow:inset 0 0 0 1px #d4e3f1;font-weight:800}
+.draft{background:#fff6e9;color:#80644a;font-size:.8rem}
+.breaking-news{background:#e91609;box-shadow:inset 0 -3px 0 #bd1209;padding-block:11px 13px;letter-spacing:-.03em}
+.hero-date{font-weight:600;color:#4c6680;font-size:.875rem}
+.button{position:relative;background:linear-gradient(180deg,#ffb644,#f39819);border:1px solid #eb9014;border-radius:16px;box-shadow:0 4px 0 #b65b00,0 9px 18px #db831525,inset 0 1px 0 #ffe0ad;transition:transform .16s,box-shadow .16s,background .16s}
+.button:hover{background:linear-gradient(180deg,#ffc15e,#ffa322);transform:translateY(-2px);box-shadow:0 6px 0 #b65b00,0 12px 22px #db83152b}
+.button:active{transform:translateY(2px);box-shadow:0 2px 0 #b65b00}.button.check-rates>span,.sim-submit>span{display:grid;place-items:center;flex:none;width:30px;height:30px;border-radius:50%;background:#123f70;color:white;font-size:1.1rem;line-height:1}
+.fv-cta{padding:14px 26px 28px}.section{padding:46px 30px}.section>h2,.closing>h2{font-size:2rem;letter-spacing:.025em;line-height:1.55;text-align:center}.section>h2 em{text-decoration:none;background:linear-gradient(transparent 76%,#f398194d 76%,#f398194d 96%,transparent 96%)}
+.simulator-section{position:relative;background:#123f70;border:0;border-radius:32px 32px 0 0;padding-top:40px;color:white;box-shadow:inset 0 1px 0 #ffffff35}
+.simulator-section:before{content:"";display:block;width:42px;height:5px;background:var(--orange);border-radius:10px;margin:0 auto 18px}
+.simulator-section>h2,.simulator-section>h2 em{color:white}.simulator-section>h2 em{background:linear-gradient(transparent 84%,#f39819 84%,#f39819 94%,transparent 94%)}
+.sim-period{background:transparent;border:1px solid #ffffff4d;border-radius:100px;color:#fff;padding:9px 10px;margin:24px 0;font-size:.9375rem}
+#rate-form{color:var(--blue);border:0;border-radius:22px;padding:28px 24px;box-shadow:0 15px 35px #04274335}
+#rate-form label{font-size:1.2rem;letter-spacing:.015em}.required{background:#fff0dc;color:#934100;border-radius:5px;padding:4px 7px}
+#rate-form select{min-height:64px;background:#f6f9fc;border:2px solid #bacde0;border-radius:12px;padding-inline:13px;font-weight:700;box-shadow:inset 0 2px 4px #123f7004}
+#rate-form select:hover{border-color:#6b91b5}.gas-options{border-color:#dae5ef;padding-block:18px 0;margin-block:24px}.gas-options summary{font-size:1rem;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:8px}.gas-options summary::-webkit-details-marker{display:none}.gas-options summary:after{content:"＋";color:var(--blue);font-size:1.3rem}.gas-options[open] summary:after{content:"−"}
+.simulator-section>.source-details{color:#e0ebf6;padding:8px 10px;border-top:1px solid #ffffff30;font-size:.9375rem}.simulator-section>.source-details summary{text-align:center}.simulator-section>.source-details a{color:white}.fine{font-size:.9375rem;color:#58718a}
+.sim-result{color:var(--blue);padding:28px 24px;border:0;border-radius:22px;box-shadow:0 15px 35px #04274335}.result-label{color:#9b4904;display:inline-block;padding:4px 12px;border-radius:100px;background:#fff1dd;font-size:.875rem;margin-bottom:12px}.model-badge{border-radius:7px;font-size:.9375rem}.rate-result-card{border-color:#e4eaf1}.rate-difference strong{font-size:3.2rem;letter-spacing:-.045em}.rate-comparison{border-radius:12px;background:#f1f6fb;padding:14px 10px}.rate-comparison p:last-child{background:#fff0dc;border-radius:9px;padding:8px}.result-caution{color:#5b6c7b}.result-next{border-top:1px solid #dce6ee;position:relative;padding-top:34px}.result-next:before{content:"";position:absolute;top:-1px;left:calc(50% - 12px);border-left:12px solid transparent;border-right:12px solid transparent;border-top:12px solid #f39819}.result-next h3{text-align:center}
+.plans-section{position:relative;border:0;background:#fff;padding-top:48px}.plans-section:before{content:"";position:absolute;top:0;left:calc(50% - 25px);border-left:25px solid transparent;border-right:25px solid transparent;border-top:18px solid #123f70}.simple-services{gap:18px;margin:30px 0}.simple-services h3{position:relative;border-radius:22px;background:#eff6fc;border:1px solid #dbe8f4;padding:26px 8px 23px;box-shadow:0 6px 0 #dbe8f455}.simple-services h3+h3{background:#fff5e8;border-color:#f5dfbf;box-shadow:0 6px 0 #f5dfbf55}.simple-services span.electric-mark{display:grid;place-items:center;width:82px;height:82px;background:white;border-radius:50%;margin:0 auto 17px}.simple-services .electric-mark svg{width:35px;height:49px;color:#123f70;margin:0}.simple-services h3>svg{width:82px;height:82px;border-radius:50%;padding:19px 24px;margin:0 auto 17px;background:white;color:#c05a00}
+.solar-section{border:0;background:#fff5e8;position:relative;padding-top:34px;overflow:hidden}.solar-section:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 95% 4%,#ffdfaa88 0 100px,transparent 101px)}.solar-section>*{position:relative}.solar-art{display:block;width:min(100%,390px);height:auto;margin:0 auto 18px}.solar-section h3{text-align:center;font-size:1.4rem;line-height:1.75;color:#536d86;margin-bottom:28px}
+.closing{border:0;background:#123f70;color:white;padding:42px 30px;border-radius:0 0 28px 28px}.closing>h2{color:white}.closing .news-card{color:var(--blue)}footer{background:white;padding-top:34px}
+.news-card{border:1px solid #fff;border-radius:20px;box-shadow:0 12px 35px #123f7010;transition:transform .2s,box-shadow .2s;overflow:hidden}.news-card:is(a):hover{transform:translateY(-4px);box-shadow:0 18px 40px #123f7020}.news-card img{border-radius:14px 14px 0 0}.news-card h3{padding:21px 20px 13px;line-height:1.6}.news-card>span{padding:0 20px 20px;color:#5f7488;font-size:.8rem;line-height:1.7}
+.mobile-cta{box-shadow:0 -8px 26px #123f7010;background:#fffffffa;border-color:#d9e5ef}.mobile-cta .button{border-radius:13px}.mobile-cta>span{color:var(--blue)}
+@media(min-width:1100px){.rail{gap:30px;padding-inline:clamp(24px,3.2vw,64px)}.rail-brand h2{font-size:1.7rem;line-height:1.7;letter-spacing:.04em}.rail-logo{background:white;border-radius:16px;padding:15px 18px;box-shadow:0 5px 22px #123f7005;max-width:280px}.rail-brand .news-card{padding:7px;max-width:340px}.rail-brand .news-card h3{padding-top:16px}.rail-brand .news-card>span{padding-bottom:10px}.rail-menu nav{gap:8px}.rail-menu nav a{display:flex;align-items:center;gap:14px;border:0;border-radius:11px;padding:15px 17px;line-height:1.4;font-size:1.075rem}.rail-menu nav a:before{content:"";width:6px;height:6px;flex:none;border-radius:50%;background:#95b0c8}.rail-menu nav a:hover{background:#ffffffaa}.rail-menu nav a[aria-current]{background:white;color:#123f70;box-shadow:0 4px 16px #123f7008}.rail-menu nav a[aria-current]:before{background:var(--orange);box-shadow:0 0 0 4px #fff0db}.rail-contact{border:1px solid #fff;border-radius:22px;background:#fff;padding:26px 20px;box-shadow:0 12px 32px #123f7008}.rail-contact h2{font-size:1.35rem;line-height:1.6}.rail-contact .button{font-size:1rem;padding-inline:8px;gap:6px}.rail-contact .check-rates>span{width:24px;height:24px;font-size:1rem}.rail-menu nav,.rail-contact{width:100%;max-width:340px;margin-inline:auto}}
+@media(max-width:640px){.section,.closing{padding-inline:24px}.section>h2,.closing>h2{font-size:1.8rem}.simulator-section{border-radius:26px 26px 0 0;padding-top:32px}.sim-period{font-size:.875rem}#rate-form,.sim-result{padding:24px 18px}.rate-difference strong{font-size:2.8rem}.simple-services h3{font-size:1.2rem}.plans-section{padding-top:42px}.solar-section{padding-top:25px}.solar-art{margin-bottom:10px}.news-card h3{font-size:1.25rem}}
+@media(max-width:360px){.section,.closing{padding-inline:18px}.fv-cta{padding-inline:18px}.section>h2,.closing>h2{font-size:1.65rem}.sim-period{font-size:.8rem;padding-inline:7px}#rate-form,.sim-result{padding:22px 14px}.rate-difference strong{font-size:2.3rem}.rate-comparison{padding:10px 5px}.rate-comparison p:last-child{padding:6px}.simple-services{gap:12px}.simple-services h3{font-size:1.1rem}.button.check-rates{font-size:1.1rem}.button.check-rates>span{width:24px;height:24px}.mobile-cta .button.check-rates{font-size:.9rem}}
+@media(prefers-reduced-motion:reduce){.button,.news-card{transition:none}.button:hover,.button:active,.news-card:is(a):hover{transform:none}}
+
+/* Faint home photograph under the intact hero artwork. */
+.hero picture{isolation:isolate;position:relative;background:#fff}.hero picture img{mix-blend-mode:normal;opacity:1;filter:none}
+.rail-contact .button+.button{margin-top:18px}.rail-contact .check-rates{background:#edf5fd;border:1px solid #b8cde2;box-shadow:0 3px 0 #c4d5e5;color:var(--blue)}
+
+/* Original red/white news ribbon with the stronger typography retained. */
+.breaking-news{font-size:2.45rem;letter-spacing:-.045em}
+.breaking-news>span:first-child{transform:none;text-shadow:none;letter-spacing:inherit}
+.breaking-news>span:last-child{color:#fff;text-shadow:none;font-size:.94em;padding-left:5px}
+.breaking-news .breaking-divider{color:#fff;font-size:.85em;font-weight:900}
+@media(max-width:640px){.breaking-news{font-size:clamp(1.45rem,6.8vw,2.45rem)}.breaking-news>span:last-child{padding-left:2px}}
+
+.rate-list-details{margin-top:12px;border-top:1px solid #ffffff30;color:#fff;font-size:1rem}
+.rate-list-details>summary{padding:18px 4px;text-align:center;font-weight:800;cursor:pointer}
+.rate-list-content{margin-top:8px;padding:20px 16px;background:white;color:var(--blue);border-radius:18px}
+.rate-list-note{font-size:.875rem;text-align:center;color:#526a80;line-height:1.7}
+.rate-list-table{width:100%;border-collapse:collapse;table-layout:fixed;margin:20px 0 28px;font-size:1rem;font-variant-numeric:tabular-nums}
+.rate-list-table caption{text-align:left;font-size:1.3rem;font-weight:800;padding:0 0 10px}
+.rate-list-table thead th{background:#edf5fd;font-size:.875rem;padding:10px 2px;white-space:nowrap}
+.rate-list-table tbody th{text-align:left;padding:16px 6px 5px;font-size:1.05rem}
+.rate-list-table td{text-align:center;padding:8px 2px 14px;border-bottom:1px solid #d4dfe9;white-space:nowrap;font-weight:700}
+.rate-list-table .rate-list-increase{background:#fff4e4;color:#a84900;font-weight:900}
+@media(max-width:360px){.rate-list-content{padding-inline:10px}.rate-list-table{font-size:.9375rem}.rate-list-table thead th{font-size:.8125rem}}
+
+
+/* Soft white light behind headline rows, with clearer photographic edges. */
+
+.plans-section>h2{margin-bottom:14px}.plans-description{text-align:center;white-space:nowrap;font-size:clamp(1rem,4.2vw,1.2rem);color:#526a80;line-height:1.6;margin:0}
+
+/* Fill the hero width while preserving the first-screen CTA height budget. */
+.hero picture img{object-fit:fill}
+@media(min-width:1100px){.rail-brand{gap:22px}.rail-brand .news-rate-cta{max-width:340px;margin-inline:auto;font-size:1.1rem;line-height:1.5;min-height:74px;flex-shrink:0}}
+
+.breaking-news{font-family:inherit;font-weight:800;letter-spacing:normal}
+
+.news-thumbnails{display:grid;gap:16px;width:100%;max-width:340px;margin-inline:auto}.rail-brand .news-thumbnails .news-card{padding:0;border:0;border-radius:12px;box-shadow:0 5px 20px #123f7010}.news-thumbnails .news-card img{display:block;width:100%;height:auto;border-radius:12px}
+@media(min-width:1100px) and (max-height:780px){.rail-brand{gap:16px;padding-block:20px}.rail-brand .rail-logo{padding:10px 14px;max-width:245px}.rail-brand h2{font-size:1.45rem;line-height:1.5}.news-thumbnails{gap:12px}.rail-brand .news-rate-cta{min-height:64px;font-size:1rem}}
